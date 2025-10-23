@@ -10,6 +10,9 @@ values = np.array([["Jeet", 22, "Male"], ["Suman", 23, "Male"], ["Tridibesh", 22
 # Create DataFrame
 data = pd.DataFrame(data=values, columns=attributes)
 
+# Create another values for DataFrame and add them into the data
+data.loc[len(data)] = ["Sumit", 22, "Male"]
+
 # Create a output directory
 folder_path = "data"
 os.makedirs(folder_path, exist_ok=True)
