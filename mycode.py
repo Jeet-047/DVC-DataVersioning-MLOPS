@@ -11,7 +11,8 @@ values = np.array([["Jeet", 22, "Male"], ["Suman", 23, "Male"], ["Tridibesh", 22
 data = pd.DataFrame(data=values, columns=attributes)
 
 # Create another values for DataFrame and add them into the data
-data.loc[len(data)] = ["Sumit", 22, "Male"]
+data.loc[len(data)] = ["Sumit", 22, "Male"] # Add new row
+data.loc[len(data)] = ["Ritu", 22, "Female"] # Again add new row
 
 # Create a output directory
 folder_path = "data"
